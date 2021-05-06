@@ -1,11 +1,9 @@
 @import 'bootstrap';
 @import 'posts';
+@import 'home';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-h2 {
-    font-weight: unset;
-}
 
 body {
     font-family: 'lato';
@@ -17,16 +15,39 @@ body {
     display: flex;
     align-items: center;
     margin:50px 50px;
-    justify-content: center;
+    justify-content: space-between;
+
 
     .logo{
-        position: relative;
-        width: 50px;
         height: 50px;
-        transform: translateX(-600px);
+        width: auto;
+        margin-right:2rem;
+        transition: all 0.1s ease-out;
+        align-self: flex-start;
+        text-align: left;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .main-titles {
+        display: flex;
     }
 
     h2{
-        margin:0 32px;
+        margin: 0 1rem;
+        font-weight: unset;
+        color: #444444;
+    }
+
+    .admin{
+        margin-right:2rem;
+         /* transform: translateX(30vw);*/
+
+        a {
+            font-size: 1.7rem;
+            color: #4ecdc4;
+        }
     }
 };
