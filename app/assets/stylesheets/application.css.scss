@@ -26,16 +26,17 @@ a:hover {
             }
 }
 
+
 .form-actions {
     color: white;
     font-size: 1.2rem;
-    align-self: left;
+    align-self: flex-start;
     margin: 4rem 2rem;
     padding: 10px 20px;
     background: #ff6b6b;
     border-radius: 30px;
-
-
+    
+    
     a {
         color: white;
         font-weight: 700;
@@ -47,10 +48,10 @@ a:hover {
     padding: 10px 20px;
     background: #ff6b6b;
     border-radius: 30px;
-    align-self: left;
+    align-self:flex-start;
     margin: 3rem 1.5rem;
     border-radius: 30px;
-
+    
     a {
         color: white;
         font-weight: 700;
@@ -59,8 +60,12 @@ a:hover {
     
 }
 
-.container {
+.align-center {
+    align-self: center;
+}
 
+.container {
+    
     max-width: 95vw;
 }
 
