@@ -8,14 +8,14 @@
                 
                 <% @posts.each do |post| %>
 
-                        <div class="images">
+                        <div class="images mb-5">
                             <%= link_to post do%>
                             <img src="<%= post.image %>" >
                             <% end %>
 
                             <div class="description">
                                 <p class="title"><%= post.title %> </p>
-                                <p class="category"> "<%= post.category_id %> </p>
+                                <p class="category"> <%= post.category.name %> </p>
                             </div>
                         </div>
                     
