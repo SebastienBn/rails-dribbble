@@ -4,9 +4,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+p {
+    font-size: 1.2rem;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
 
 a:hover {
     text-decoration: none;
+    
+}
+
+.button {
+    transition: all 0.1s ease-in-out;
+            
+            &:hover {
+                transform: scale(1.05);
+            }
+}
+
+.action {
+    padding: 10px 20px;
+    background: #ff6b6b;
+    border-radius: 30px;
+    align-self: center;
+    margin: 4rem 2rem;
+    border-radius: 30px;
+
+    a {
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    
+}
+
+.form-actions {
+    align-self: left;
+
+    a {
+        color: white;
+        font-size: 1.5rem;
+    }
 }
 
 .container {
@@ -33,13 +75,8 @@ body {
         height: 40px;
         width: auto;
         margin-right:2rem;
-        transition: all 0.1s ease-out;
         align-self: flex-start;
         text-align: left;
-
-        &:hover {
-            transform: scale(1.05);
-        }
     }
 
     .center-title {
@@ -66,7 +103,7 @@ body {
         .admin{
             margin-right:1rem;
     
-            a {
+            a {  
                 font-size: 1.4rem;
                 color: #4ecdc4;
             }
@@ -81,7 +118,6 @@ body {
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
         
-        
             a {
                 color: #4ecdc4;
                 font-weight: 700;
@@ -91,32 +127,29 @@ body {
         }
 
         .sign-in{
+            transition: all 0.1s ease-in-out;
             align-self: center;
             padding: 5px 10px;
             margin-right: 1rem;
             background: #4ecdc4;
             border-radius: 30px;
-        
-        
+
             a {
                 color: white;
                 font-weight: 700;
                 font-size: 1.2rem;
+
             }
         
         }
 
         .log-out{
-            align-self: center;
-            padding: 5px 10px;
-            border-radius: 30px;
-            border: 2px solid #ff6b6b;
-        
+            align-self: center;  
         
             a {
                 color: #ff6b6b;
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
         
         }

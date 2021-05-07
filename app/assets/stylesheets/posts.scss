@@ -68,7 +68,8 @@ img{
     span {
         padding: 5px 10px;
         border-radius: 30px;
-        border: 2px solid black;
+        border: 1px solid #4ecdc4;
+        box-sizing: border-box;
         font-weight: 600;
     }
 

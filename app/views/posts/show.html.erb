@@ -2,11 +2,9 @@
 
 <section class="show">
 
-  <p id="notice"><%= notice %></p>
-
   <p>
-    <span>User</span>
-    <%= @post.user.email %>
+    <strong>Utilisateur </strong>
+    <span> <%= @post.user.email %> </span>
   </p>
 
   <h2>
@@ -20,12 +18,12 @@
   </p>
 
   <p>
-    <span>Category</span>
-    <%= @post.category.name %>
+    <strong>Catégorie </strong>
+    <span> <%= @post.category.name %> </span>
   </p>
 
-  <p class="back">
-  <%= link_to 'Back', root_path %>
+  <p class="back button action">
+  <%= link_to 'Retour', root_path %>
   </p>
 
 </section>
