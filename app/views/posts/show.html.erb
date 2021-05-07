@@ -1,29 +1,31 @@
 
 
-<section>
+<section class="show">
 
   <p id="notice"><%= notice %></p>
 
   <p>
-    <strong>User:</strong>
-    <%= @post.user_id %>
+    <span>User</span>
+    <%= @post.user.email %>
   </p>
 
-  <p class="title">
-    <strong><%= @post.title %></strong>
+  <h2>
+    <%= @post.title %>
+  </h2>
+
+  <img class="show-img" alt src="<%= @post.image %>">
+
+  <p class="description"> 
+    <%= @post.desciprion %>
   </p>
 
-  <img alt src="<%= @post.image %>">
-
-  <%= @post.desciprion %>
-
-  <p class="category">
-    <strong>Category:</strong>
-    <%= @post.category_id %>
+  <p>
+    <span>Category</span>
+    <%= @post.category.name %>
   </p>
 
   <p class="back">
-  <%= link_to 'Back', posts_path %>
+  <%= link_to 'Back', root_path %>
   </p>
 
 </section>

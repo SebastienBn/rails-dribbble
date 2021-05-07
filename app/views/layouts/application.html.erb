@@ -24,10 +24,19 @@
 
 
           <div class="right">
-            <div class="admin"><%= link_to 'Admin', posts_path %></div>
-            <div class="sign-in"><%= link_to 'Inscription', new_user_registration_path %></div>
-            <div class="log-in"><%= link_to 'Connexion',  new_user_session_path %></div>
+            <%if current_user.present? %>
+              
+                <div class="admin"><%= link_to 'Admin', posts_path %></div>
+                <div class="log-out"><%= link_to 'Deconnexion',  destroy_user_session_path, method: :delete %></div>
+                
+            <%else%>
+            
+              <div class="sign-in"><%= link_to 'Inscription', new_user_registration_path %></div>
+              <div class="log-in"><%= link_to 'Connexion',  new_user_session_path %></div>
+              
+            <%end%>
           </div>
+
 
         </div>
 

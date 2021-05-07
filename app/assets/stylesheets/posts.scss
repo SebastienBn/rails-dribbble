@@ -25,21 +25,6 @@ img{
     margin-top: 1rem;
 }
 
-.back {
-
-    align-self: flex-start;
-    margin: 4rem 2rem;
-    padding: 10px 20px;
-    background: #ff6b6b;
-    border-radius: 30px;
-
-
-    a {
-        color: white;
-        font-weight: 700;
-        font-size: 1.5rem;
-    }
-}
 
 .form-actions {
     color: white;
@@ -55,5 +40,57 @@ img{
         color: white;
         font-weight: 700;
         font-size: 1.5rem;
+    }
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+
+    img {
+        width: 800px;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;        
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    span {
+        padding: 5px 10px;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-weight: 600;
+    }
+
+    .description {
+        font-weight: 600;
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+
+    .back {
+        align-self: center;
+        margin: 4rem 2rem;
+        padding: 10px 20px;
+        background: #ff6b6b;
+        border-radius: 30px;
+
+
+        a {
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
     }
 }

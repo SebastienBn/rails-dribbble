@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
+a:hover {
+    text-decoration: none;
+}
+
 .container {
 
     max-width: 95vw;
@@ -43,6 +47,7 @@ body {
         justify-content: center;
         align-self: center;
         margin-top: -2.2rem;
+        font-weight: 700;
     }
 
     h2{
@@ -72,6 +77,9 @@ body {
             padding: 5px 10px;
             border-radius: 30px;
             border: 2px solid #4ecdc4;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
         
         
             a {
@@ -92,6 +100,21 @@ body {
         
             a {
                 color: white;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        
+        }
+
+        .log-out{
+            align-self: center;
+            padding: 5px 10px;
+            border-radius: 30px;
+            border: 2px solid #ff6b6b;
+        
+        
+            a {
+                color: #ff6b6b;
                 font-weight: 700;
                 font-size: 1.2rem;
             }
