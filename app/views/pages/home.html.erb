@@ -1,6 +1,6 @@
 <body>
     <section>
-        <div class="new-post button">
+        <div class="new-post button action">
             <%= link_to 'New Post', new_post_path %>
         </div>
 
@@ -8,7 +8,7 @@
                 
                 <% @posts.each do |post| %>
 
-                        <div class="images mb-5">
+                        <div class="images">
                             <%= link_to post do%>
                             <img class="img-hover" src="<%= post.image %>" >
                             <% end %>

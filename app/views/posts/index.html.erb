@@ -1,22 +1,22 @@
 
 
-<body>
+<body class="admin">
 
 
   <p id="notice"><%= notice %></p>
 
-     <div class="new-post"><%= link_to 'New Post', new_post_path %></div>
+  <div class="new-post button action"><%= link_to 'Nouveau Post', new_post_path %></div>
 
   <h1>Posts</h1>
 
   <table>
     <thead>
       <tr>
-        <th>User</th>
-        <th>Title</th>
+        <th>Utilisateur</th>
+        <th>Titre</th>
         <th>Image</th>
-        <th>Desciprion</th>
-        <th>Category</th>
+        <th>Description</th>
+        <th>Catégorie</th>
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -29,9 +29,9 @@
           <td><img src="<%= post.image %>"></td>
           <td><%= post.desciprion %></td>
           <td><%= post.category_id %></td>
-          <td><%= link_to 'Show', post %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Ouvrir', post %></td>
+          <td><%= link_to 'Modifier', edit_post_path(post) %></td>
+          <td><%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Êtes vous sûr?' } %></td>
         </tr>
       <% end %>
     </tbody>

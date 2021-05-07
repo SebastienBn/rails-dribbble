@@ -18,29 +18,21 @@ img{
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .category {
     margin-top: 1rem;
 }
 
+.admin {
+    display: flex;
+    flex-direction: column;
 
-.form-actions {
-    color: white;
-    font-size: 1.5rem;
-    align-self: left;
-    margin: 4rem 2rem;
-    padding: 10px 20px;
-    background: #ff6b6b;
-    border-radius: 30px;
-
-
-    a {
-        color: white;
-        font-weight: 700;
-        font-size: 1.5rem;
+    .new-post {
+        align-self: center;
     }
+
 }
 
 .show {
@@ -51,13 +43,13 @@ img{
     align-self: center;
 
     img {
-        width: 800px;
+        width: 600px;
         margin-left: 0;
         align-self: center;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;        
     }
 
@@ -82,16 +74,5 @@ img{
 
     .back {
         align-self: center;
-        margin: 4rem 2rem;
-        padding: 10px 20px;
-        background: #ff6b6b;
-        border-radius: 30px;
-
-
-        a {
-            color: white;
-            font-weight: 700;
-            font-size: 1.5rem;
-        }
     }
 }
