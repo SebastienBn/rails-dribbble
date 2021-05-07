@@ -89,13 +89,16 @@ body {
         width: auto;
         align-self: flex-start;
         text-align: left;
+        align-items: center;
+        transform: translateY(0.6rem);
     }
 
     .center-title {
         display: flex;
         justify-content: center;
         align-self: center;
-        margin-top: -2.2rem;
+        align-items: center;
+        margin-top: -2.6rem;
         font-weight: 700;
     }
 
@@ -120,7 +123,18 @@ body {
                 color: #4ecdc4;
             }
         }
-    
+        
+        .log-out{
+            align-self: center;  
+        
+            a {
+                color: #ff6b6b;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        
+        }
+        
         .log-in{
             align-self: center;
             padding: 5px 10px;
@@ -133,7 +147,7 @@ body {
             a {
                 color: #4ecdc4;
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         
         }
@@ -149,22 +163,12 @@ body {
             a {
                 color: white;
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1rem;
 
             }
         
         }
 
-        .log-out{
-            align-self: center;  
-        
-            a {
-                color: #ff6b6b;
-                font-weight: 700;
-                font-size: 1.2rem;
-            }
-        
-        }
     }
    
 };

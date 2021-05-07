@@ -14,9 +14,9 @@
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
     </div>
 
-    <div class="form-actions button action">
+    <p class="button action">
       <%= f.button :submit, "Se connecter" %>
-    </div>
+    </p>
   <% end %>
 
   <%= render "devise/shared/links" %>
