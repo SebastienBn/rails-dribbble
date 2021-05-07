@@ -8,13 +8,15 @@
                 
                 <% @posts.each do |post| %>
 
-                        <%= link_to post do%>
-                        <img src="<%= post.image %>" >
-                        <% end %>
+                        <div class="images">
+                            <%= link_to post do%>
+                            <img src="<%= post.image %>" >
+                            <% end %>
 
-                        <div class="description">
-                            <p class="title"><%= post.title %> </p>
-                            <%= post.category_id %>  
+                            <div class="description">
+                                <p class="title"><%= post.title %> </p>
+                                <p class="category"> "<%= post.category_id %> </p>
+                            </div>
                         </div>
                     
                 <% end %>

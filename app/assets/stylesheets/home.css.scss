@@ -1,12 +1,13 @@
 section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .new-post {
 
-    align-self: flex-start;
-    margin: 25px 25px 25px 0;
+    align-self: center;
+    margin: 4rem 2rem;
     padding: 10px 20px;
     background: #ff6b6b;
     border-radius: 30px;
@@ -23,15 +24,22 @@ section {
 img {
     margin: 0;
     border-radius: 20px;
-    width: 400px; height: auto;
+    width: 360px; height: auto;
 }
 
 .posts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
 
     a {
         margin: 0;
+    }
+
+    .images {
+        margin: 0 2rem;
     }
 }
 
@@ -39,7 +47,12 @@ img {
     margin : 1rem 0;
 
     .title {
+        margin-bottom: 0;
         font-size: 1.5rem;
         font-weight: 700;
+    }
+
+    .category {
+        margin-top: 0;
     }
 }
