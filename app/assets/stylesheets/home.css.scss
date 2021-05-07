@@ -3,15 +3,10 @@ section {
     flex-direction: column;
 }
 
-img {
-    border-radius: 20px;
-    width: 400px; height: auto;
-}
-
 .new-post {
 
     align-self: flex-start;
-    margin: 25px;
+    margin: 25px 25px 25px 0;
     padding: 10px 20px;
     background: #ff6b6b;
     border-radius: 30px;
@@ -22,12 +17,22 @@ img {
         font-weight: 700;
         font-size: 1.5rem;
     }
-    
+
+}
+
+img {
+    margin: 0;
+    border-radius: 20px;
+    width: 400px; height: auto;
 }
 
 .posts {
     display: flex;
     flex-direction: column;
+
+    a {
+        margin: 0;
+    }
 }
 
 .description {

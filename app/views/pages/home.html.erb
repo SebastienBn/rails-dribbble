@@ -4,10 +4,12 @@
             <%= link_to 'New Post', new_post_path %>
         </div>
 
+                <div class="posts">
+                
                 <% @posts.each do |post| %>
 
                         <%= link_to post do%>
-                        <img src="<%= post.image %>">
+                        <img src="<%= post.image %>" >
                         <% end %>
 
                         <div class="description">
@@ -16,6 +18,8 @@
                         </div>
                     
                 <% end %>
+
+                </div>
 
     </section>
 </body>
