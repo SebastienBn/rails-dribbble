@@ -2,11 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 a, img{
     margin: 1rem 1rem;
 }
 
 img{
+    width: 700px;
     border-radius: 20px;
     width: 50px; height: auto;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.category {
+    margin-top: 1rem;
+}
+
+.back {
+
+    align-self: flex-start;
+    margin: 4rem 2rem;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    border-radius: 30px;
+
+
+    a {
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
 }

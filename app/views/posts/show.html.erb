@@ -1,30 +1,29 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @post.user_id %>
-</p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<section>
 
-<p>
-  <strong>Image:</strong>
-  <%= @post.image %>
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>User:</strong>
+    <%= @post.user_id %>
+  </p>
+
+  <p class="title">
+    <strong><%= @post.title %></strong>
+  </p>
+
   <img alt src="<%= @post.image %>">
-</p>
 
-<p>
-  <strong>Desciprion:</strong>
   <%= @post.desciprion %>
-</p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @post.category_id %>
-</p>
+  <p class="category">
+    <strong>Category:</strong>
+    <%= @post.category_id %>
+  </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+  <p class="back">
+  <%= link_to 'Back', posts_path %>
+  </p>
+
+</section>
