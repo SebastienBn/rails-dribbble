@@ -17,11 +17,13 @@ body {
 .header{
     font-family: 'lato' !important;
     font-weight: 600 !important;
-    display: flex;
-    align-items: center;
     margin:50px 50px;
-    justify-content: space-between;
 
+    .sides {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .logo{
         height: 40px;
@@ -36,26 +38,65 @@ body {
         }
     }
 
-    .main-titles {
+    .center-title {
         display: flex;
         justify-content: center;
         align-self: center;
-        transform: translateX(-10%);
+        margin-top: -2.2rem;
     }
 
     h2{
+
         margin: 0 1rem;
         font-weight: unset;
         color: #444444;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
-    .admin{
-        margin-right:2rem;
 
-        a {
-            font-size: 1.4rem;
-            color: #4ecdc4;
+    .right {
+        display: flex;
+        align-items: center;
+
+        .admin{
+            margin-right:1rem;
+    
+            a {
+                font-size: 1.4rem;
+                color: #4ecdc4;
+            }
+        }
+    
+        .log-in{
+            align-self: center;
+            padding: 5px 10px;
+            border-radius: 30px;
+            border: 2px solid #4ecdc4;
+        
+        
+            a {
+                color: #4ecdc4;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        
+        }
+
+        .sign-in{
+            align-self: center;
+            padding: 5px 10px;
+            margin-right: 1rem;
+            background: #4ecdc4;
+            border-radius: 30px;
+        
+        
+            a {
+                color: white;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        
         }
     }
+   
 };
