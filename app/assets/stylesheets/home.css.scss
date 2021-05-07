@@ -1,10 +1,16 @@
-
 section {
     display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 20px;
+    width: 400px; height: auto;
 }
 
 .new-post {
-    justify-content: center;
+
+    align-self: flex-start;
     margin: 25px;
     padding: 10px 20px;
     background: #ff6b6b;
@@ -17,4 +23,18 @@ section {
         font-size: 1.5rem;
     }
     
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin : 1rem 0;
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 }

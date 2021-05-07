@@ -19,7 +19,7 @@ body {
 
 
     .logo{
-        height: 50px;
+        height: 40px;
         width: auto;
         margin-right:2rem;
         transition: all 0.1s ease-out;
@@ -39,14 +39,14 @@ body {
         margin: 0 1rem;
         font-weight: unset;
         color: #444444;
+        font-size: 1.5rem;
     }
 
     .admin{
         margin-right:2rem;
-         /* transform: translateX(30vw);*/
 
         a {
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             color: #4ecdc4;
         }
     }

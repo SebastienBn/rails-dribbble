@@ -1,7 +1,21 @@
 <body>
     <section>
+        <div class="new-post">
+            <%= link_to 'New Post', new_post_path %>
+        </div>
 
-    <div class="new-post"><%= link_to 'New Post', new_post_path %></div>
+                <% @posts.each do |post| %>
+
+                        <%= link_to post do%>
+                        <img src="<%= post.image %>">
+                        <% end %>
+
+                        <div class="description">
+                            <p class="title"><%= post.title %> </p>
+                            <%= post.category_id %>  
+                        </div>
+                    
+                <% end %>
 
     </section>
 </body>
