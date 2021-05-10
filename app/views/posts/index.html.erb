@@ -10,7 +10,7 @@
   <table>
     <thead>
       <tr>
-        <th>Utilisateur</th>
+        <%# <th>Utilisateur</th> %>
         <th>Titre</th>
         <th>Image</th>
         <th>Description</th>
@@ -23,11 +23,11 @@
     <tbody>
       <% @user_posts.each do |post| %>
         <tr>
-          <td><%= post.user_id %></td>
+          <%# <td><%= post.user.email </td> %>
           <td><%= post.title %></td>
           <td><img src="<%= post.image %>"></td>
           <td><%= post.desciprion %></td>
-          <td><%= post.category_id %></td>
+          <td><%= post.category.name %></td>
           <td><%= link_to 'Ouvrir', post %></td>
           <td><%= link_to 'Modifier', edit_post_path(post) %></td>
           <td><%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Êtes vous sûr?' } %></td>
